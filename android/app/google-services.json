@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "952341963574",
+    "project_id": "lively-d03a6",
+    "storage_bucket": "lively-d03a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952341963574:android:4c75a2d938540171224997",
+        "android_client_info": {
+          "package_name": "com.example.lively"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952341963574-od4g560qs8g267giu2pd3cetmds6tpep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lively",
+            "certificate_hash": "8ded979240562efc7a8acdda31490aca85ecbe84"
+          }
+        },
+        {
+          "client_id": "952341963574-1ff6m8ls3t4d67pbmjnupr56eq5u2koq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYeMgyzrvMzuLclstLTyUlz28aL0ZXST0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952341963574-1ff6m8ls3t4d67pbmjnupr56eq5u2koq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
