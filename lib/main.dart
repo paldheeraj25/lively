@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lively/resources/firebase_repository.dart';
+import 'package:lively/screens/auth/auth.dart';
+import 'package:lively/screens/home/home_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,6 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   FirebaseRepository _repository = FirebaseRepository();
+
   @override
   Widget build(BuildContext context) {
     // Firestore.instance
@@ -26,7 +29,7 @@ class _MyAppState extends State<MyApp> {
           if (snapshot.hasData) {
             return HomeScreen();
           } else {
-            return LoginScreen();
+            return AuthScreen();
           }
         },
       ),
