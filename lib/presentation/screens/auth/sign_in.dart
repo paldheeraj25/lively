@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lively/presentation/screens/home/components/body.dart';
+import 'package:lively/presentation/screens/auth/components/body.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
