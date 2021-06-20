@@ -50,28 +50,22 @@ class ContactandInfo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SvgPicture.asset(
-                          "assets/icons/star_fill.svg",
-                        ),
                         SizedBox(
-                          height: kDefaultPadding / 4,
+                          height: 5,
                         ),
-                        RichText(
-                          text: TextSpan(
-                              style: TextStyle(color: Colors.black),
-                              children: [
-                                TextSpan(
-                                    text: "8.2/",
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600)),
-                                TextSpan(text: "10\n"),
-                                TextSpan(
-                                    text: "122,23",
-                                    style: TextStyle(color: kTextLightColor))
-                              ]),
+                        IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.call,
+                              size: 38.0,
+                              color: Colors.black87,
+                            )),
+                        Text(
+                          "Call",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w600),
                         )
                       ],
                     ),
@@ -89,7 +83,7 @@ class ContactandInfo extends StatelessWidget {
                               color: Colors.black87,
                             )),
                         Text(
-                          "Call",
+                          "Vedio",
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.w600),
                         )

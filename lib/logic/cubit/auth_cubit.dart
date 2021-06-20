@@ -17,6 +17,7 @@ class AuthCubit extends Cubit<AuthState> {
   // Sign In method.
   void signIn() async {
     print('log in initiated');
+    emit(AuthLoading());
     firebaseRepository.signIn().then((FirebaseUser user) {
       print(user);
       if (user != null) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lively/constants/constants.dart';
 import 'package:lively/resources/model/user.dart';
 
@@ -29,7 +30,26 @@ class PersonalDescription extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text("Lawyer", style: TextStyle(color: kTextLightColor))
+                  Text("Lawyer", style: TextStyle(color: kTextLightColor)),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  RichText(
+                    text: TextSpan(
+                        style: TextStyle(color: Colors.black),
+                        children: [
+                          TextSpan(
+                              text: "8.2",
+                              style: TextStyle(color: kTextLightColor)),
+                        ]),
+                  ),
+                  SizedBox(
+                    width: 2,
+                  ),
+                  SvgPicture.asset(
+                    "assets/icons/star_fill.svg",
+                    height: 18,
+                  ),
                 ],
               )
             ],

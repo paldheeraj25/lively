@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lively/logic/cubit/auth_cubit.dart';
 import 'package:lively/presentation/screens/auth/sign_in.dart';
 import 'package:lively/presentation/screens/home/home.dart';
+import 'package:lively/presentation/widgets/spinner.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -13,6 +14,8 @@ class WelcomeScreen extends StatelessWidget {
           return HomeScreen(
             user: state.user,
           );
+        } else if (state is AuthLoading) {
+          return SpinnerScreen();
         } else {
           return SignIn();
         }
