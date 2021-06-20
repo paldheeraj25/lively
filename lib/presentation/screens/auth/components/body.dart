@@ -36,13 +36,18 @@ class Body extends StatelessWidget {
                     "${state.isAuth}",
                     style: Theme.of(context).textTheme.headline4,
                   );
+                } else {
+                  return Text("test");
                 }
+                //return Text('test');
               },
               listener: (BuildContext context, state) {
                 print(state.toString());
                 if (state is AuthInitial) {
                   print('initial state is present');
                   //return BlocProvider.of<AuthCubit>(context).isAuth();
+                } else {
+                  print('other state is present');
                 }
               },
             ),
