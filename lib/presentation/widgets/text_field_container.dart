@@ -5,7 +5,7 @@ class TextFieldContainer extends StatelessWidget {
   final Widget child;
   const TextFieldContainer({
     Key key,
-    this.child,
+    @required this.child,
   }) : super(key: key);
 
   @override

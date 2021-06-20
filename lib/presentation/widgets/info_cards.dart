@@ -4,7 +4,7 @@ import 'package:lively/constants/constants.dart';
 class InfoCard extends StatelessWidget {
   final String genre;
 
-  const InfoCard({Key key, this.genre}) : super(key: key);
+  const InfoCard({Key key, @required this.genre}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

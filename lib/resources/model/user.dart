@@ -5,7 +5,7 @@ class User {
   String displayName;
   String lastName;
   String profilePhoto;
-  int phone;
+  String phone;
 
   User(
       {this.uid,
@@ -16,7 +16,7 @@ class User {
       this.profilePhoto,
       this.phone});
 
-  Map toMap(User user) {
+  Map<String, dynamic> toMap(User user) {
     var data = Map<String, dynamic>();
     data['uid'] = user.uid;
     data['email'] = user.email;
