@@ -17,24 +17,26 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        ContactandInfo(size: size, user: user),
-        SizedBox(
-          height: kDefaultPadding / 2,
-        ),
-        PersonalDescription(user: user),
-        CareerInfo(),
-        expertise(context),
-        summary(),
-        SizedBox(height: kDefaultPadding),
-        Schedule(size: size),
-        SizedBox(
-          height: kDefaultPadding / 2,
-        ),
-        MessageFollow()
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ContactandInfo(size: size, user: user),
+          SizedBox(
+            height: kDefaultPadding / 2,
+          ),
+          PersonalDescription(user: user),
+          CareerInfo(),
+          expertise(context),
+          summary(),
+          SizedBox(height: kDefaultPadding),
+          Schedule(size: size),
+          SizedBox(
+            height: kDefaultPadding / 2,
+          ),
+          MessageFollow()
+        ],
+      ),
     );
   }
 
@@ -53,7 +55,7 @@ class Body extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Text(
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           style: TextStyle(color: Color(0xFF737599))),
     );
   }
